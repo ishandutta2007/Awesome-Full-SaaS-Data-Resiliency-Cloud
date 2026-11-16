@@ -8,7 +8,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud?style=flat&color=yellow" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud?style=flat&color=yellow" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud?style=flat&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -57,7 +57,7 @@ Leading enterprise SaaS data resiliency cloud providers sorted by company size (
 
 Self-hosted data protection systems, encrypted backup engines, and Kubernetes disaster recovery orchestrators sorted by GitHub stargazers count descending:
 
-| Project | ⭐ Star Badge | 📊 Star Count | 🛠️ Architecture & Storage Backends | 📜 License | 📝 Description |
+| Project | ⭐ Stars_Badge | 📊 Stars_Count | 🛠️ Architecture & Storage Backends | 📜 License | 📝 Description |
 |:---|:---:|:---:|:---|:---|:---|
 | **[Rclone](https://github.com/rclone/rclone)** | [![Stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers) | 61,000+ | CLI, VFS mount, FUSE, REST API; 70+ cloud backends (S3, B2, Azure, Drive, SFTP) | MIT | The "Swiss Army knife" of cloud data sync and multi-cloud resiliency. Powers data replication, bandwidth throttling, and encrypted mirroring across cloud-native environments. |
 | **[Restic](https://github.com/restic/restic)** | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | 37,200+ | Golang, Content-Defined Chunking, AES-256 CTR, Poly1305-AES; S3, B2, Azure, GCS, SFTP | BSD-2-Clause | Foundational secure backup engine featuring cryptographic deduplication, end-to-end encryption, and snapshot isolation without external daemon dependencies. |
@@ -108,7 +108,7 @@ Thank you so much for exploring and using this repository! If you found this cur
 1. Fork this repository.
 2. Add or update entries in `README.md` following the tabular column structures.
 3. For SaaS platforms: Include verified starting tier pricing and specific trial limits.
-4. For Open-Source projects: Include star badges linked to stargazers and correct repository metrics.
+4. For Open-Source projects: Include Stars_Badges linked to stargazers and correct repository metrics.
 5. Submit a pull request with reference documentation.
 
 ---
@@ -117,3 +117,12 @@ Thank you so much for exploring and using this repository! If you found this cur
 
 - This is a community-curated technical directory; listings do not represent commercial endorsements.
 - Always verify data isolation, encryption at rest/in transit, and scheduled recovery validation before deploying production workloads.
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Full-SaaS-Data-Resiliency-Cloud_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Full-SaaS-Data-Resiliency-Cloud_growth.svg">
+  </picture>
+</a>
