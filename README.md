@@ -1,6 +1,6 @@
 # Awesome-Full-SaaS-Data-Resiliency-Cloud
 
-# Top 100% SaaS Data Resiliency Cloud Ecosystem
+## Top 100% SaaS Data Resiliency Cloud Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on Cloud-Native Backup, Ransomware Recovery & Self-Hosted Data Protection Engines*  
