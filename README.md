@@ -1,71 +1,86 @@
-# Awesome-Full-SaaS-Data-Resiliency-Cloud
+# Awesome Full SaaS Data Resiliency Cloud [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top 100% SaaS Data Resiliency Cloud Ecosystem
-
-**Curated List of SaaS Platforms & Open-Source GitHub Projects**  
-*Focused on Cloud-Native Backup, Ransomware Recovery & Self-Hosted Data Protection Engines*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **100% SaaS Data Resiliency Clouds**. These offerings provide fully managed, cloud-native data protection—covering everything from backup for SaaS applications like Microsoft 365 and Salesforce to cyber recovery and ransomware resilience, with no on-premises infrastructure required. The category spans **pure SaaS platforms** with consumption-based pricing and **open-source engines** that bring cloud-native data protection principles to self-hosted deployments.
-
-**Examples** include Druva Data Resiliency Cloud, Rubrik Security Cloud, Cohesity Cloud Services, Commvault Cloud (Metallic), Veeam Data Cloud, Clumio, Keepit, and Plakar (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted data resiliency, open-source backup engines with end-to-end encryption, and community-driven recovery validation—ideal for organizations seeking data sovereignty and avoiding per-TB consumption fees that compound as data estates grow. The open-source landscape is genuinely emerging: **Plakar** offers an open resilience standard with audited end-to-end encryption and deduplication , while **Backrest** provides a web UI and orchestrator for Restic backups .
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Druva Data Resiliency Cloud](https://www.druva.com/)** | **The purest 100% SaaS data protection platform.** Cloud-native backup for SaaS apps, endpoints, data centers, and cloud workloads with **global deduplication and zero-egress restores**. **Credit-based consumption**: 1 credit = 1 TB of compressed/deduplicated data stored for one month, tracked daily. Plans: **Business** (core protection), **Enterprise** (adds cross-cloud backup and automated DR), **Elite** (fullest feature set) . | **Per TB/month after deduplication**; Business/Enterprise/Elite tiers quote-only . Example: 90 TB source dedupes 3:1 to ~30 credits/month . | No free tier; trial via sales |
-| **[Rubrik Security Cloud](https://www.rubrik.com/)** | Cyber resilience platform with immutable backups, threat monitoring, and orchestrated recovery. **Scale Subscription** (3-year minimum, extendable to 5) with **BETB measurement on-prem and FETB for cloud**. **Utility** model for variable workloads (reserve capacity + on-demand). **Rubrik Cloud Vault** for hosted backup storage . | **Foundation: $156K/year** (100 BETB list); Business: **$195.6K**; Enterprise: **$273.6K** . 3-year minimum common . | No free tier; trial via sales |
-| **[Cohesity Cloud Services](https://www.cohesity.com/)** | Fully managed multicloud BaaS hosted in AWS/Azure/GCP. **Cohesity Cloud for M365** available on AWS and Azure data planes with Core and Unlimited editions. Eliminates CapEx with subscription pricing . | **M365 Cloud Protection** via SHI: Core (80 FETB, 1 user) **~$69/month**; Unlimited (1 user) **~$34–$50/month** depending on region/tier . Enterprise BaaS: quote-only. | No free tier; trial via sales |
-| **[Commvault Cloud (Metallic)](https://www.commvault.com/)** | SaaS-delivered data protection with **Metallic Cloud Storage Service** as a fully managed backup target. Integrated with Commvault Backup & Recovery; leverages Microsoft Azure technology . | **Metallic Cloud Storage**: Cool Tier **~$937–$1,020/TB/month**; Hot Tier **~$2,340/TB/month** (1-month subscription) . | No free tier; trial via sales |
-| **[Veeam Data Cloud](https://www.veeam.com/)** | Fully managed SaaS backup with **unlimited storage included**. **Foundation ($2.63/user/mo annual)**: M365 backup (Exchange, SharePoint, OneDrive, Teams). **Advanced ($3.33)**: adds Entra ID resilience. **Premium ($7.00)**: adds disaster recovery with no throttling. **Veeam Vault** add-on for immutable cloud storage: Archive **$14/TB/mo**, Standard **$24/TB/mo** . | **M365 Foundation: $2.63/user/month** (annual, 251+ users); Advanced: **$3.33**; Premium: **$7.00** . Vault: **$14–$24/TB/month** . | No free tier; trial available |
-| **[Clumio (by Commvault)](https://www.commvault.com/)** | Fully managed, air-gapped cloud backup for AWS and Microsoft 365. **API-first with Terraform provider**. **SecureVault** offering for S3-compatible storage with air gap and cross-region restore . | **S3 backup: $0.025/GiB-month** + $1.50/million managed objects; Aurora: **$0.030/GiB-mo**; DynamoDB: **$0.15/GiB-mo** + $0.02/million items; GCS: **$0.027/GiB-mo** . Restore fees apply. | No free tier; trial available |
-| **[Keepit](https://www.keepit.com/)** | Independent cloud backup for SaaS apps (Microsoft 365, Google Workspace, Salesforce, Dynamics 365). **Vendor-independent data centers**, immutable blockchain-verified storage, 4 copies in 2 data centers per region. **No egress, ingress, or transaction fees** . | Quote-only (per-user or per-data-volume) | No free tier; trial available |
-| **[HYCU Protégé](https://www.hycu.com/)** | Multi-cloud data protection with **Nutanix heritage**. 100+ workloads across AWS, Azure, GCP, and SaaS apps. Agentless, WORM-backed, ransomware readiness architecture. | Quote-only (usage-based per VM/TiB/GiB) | Free trial available |
-| **[Acronis Cyber Cloud](https://www.acronis.com/)** | Cyber protection platform combining backup, disaster recovery, and AI-based ransomware detection. Service provider-focused with per-workload or per-GB pricing. | Quote-only (per-workload or per-GB) | Free licensing model for service provider onboarding |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Plakar](https://github.com/plakarkorp/plakar)** | [![Stars](https://img.shields.io/github/stars/plakarkorp/plakar?style=social&color=white)](https://github.com/plakarkorp/plakar/stargazers) | **The most ambitious open-source "resilience standard" with audited end-to-end encryption.** **ISC licensed core—free forever** for agent installation, single-store management, backup/navigation/restore via CLI, with **source-side encryption and deduplication** . **Kloset format**: deduplicated, compressed, **end-to-end encrypted, verifiable** data container that can move to NAS, S3, tape, or databases while retaining granular restore capability . **Zero-trust architecture**: encryption keys derived from passphrase never stored; audited by independent expert with public reports . **Enterprise edition** adds multi-store orchestration, RBAC, KMS/Vault integration, and compliance audits . **Best for organizations wanting a modern, auditable open-source backup engine** with cryptographic guarantees. |
-| **[Backrest](https://github.com/garethgeorge/backrest)** | [![Stars](https://img.shields.io/github/stars/garethgeorge/backrest?style=social&color=white)](https://github.com/garethgeorge/backrest/stargazers) | **Web UI and orchestrator for restic backup repositories.** **Self-hosted** with a clean interface for managing multiple restic repos, scheduling backup plans, browsing snapshots, and restoring files—bringing a Veeam-like management experience to the restic ecosystem . **Best for teams already using restic** wanting a centralized management layer without SaaS fees. |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Restic](https://github.com/restic/restic)** | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | **The foundational open-source backup engine that powers Backrest and many self-hosted SaaS-like workflows.** Encrypted, deduplicated, supports S3/B2/Azure/GCS/SFTP. **No central management**—pair with Backrest or custom tooling . **Best as the storage engine** beneath a self-hosted resiliency stack . |
-| **[Kopia](https://github.com/kopia/kopia)** | [![Stars](https://img.shields.io/github/stars/kopia/kopia?style=social&color=white)](https://github.com/kopia/kopia/stargazers) | **Cross-platform backup with GUI and repository server.** Same deduplicated, encrypted chunk-based design as Restic but adds a **desktop app and optional repository server** for centralized management. **Best for mixed-OS environments** where CLI-only tools are impractical . |
-
-**Frameworks for building custom systems**: Choose **Plakar** for an audited open-source backup engine with end-to-end encryption and verifiable Klosets , **Backrest** for a web-managed restic orchestration layer , or **Kopia** for cross-platform backup with a built-in server —all without per-TB consumption fees that compound as data estates grow.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- SaaS data resiliency platforms handle critical business data; enforce encryption at rest and in transit, strong access controls, and regular restore testing. **A backup that cannot be restored is not a backup.**
-- **Pricing models in this category are consumption-based and can compound unpredictably.** **Druva's credit model** tracks deduplicated data stored daily—change rate, retention, and dedupe efficiency all move the bill . **Rubrik's 3-year minimum** with **BETB/FETB measurement** means cloud customers pay on raw data volume regardless of deduplication effectiveness . **Veeam Data Cloud's unlimited storage** is genuinely included in per-user pricing ($2.63–$7.00/user/mo) , but **Vault add-on storage costs $14–$24/TB/month** . **Clumio's per-GiB pricing** ($0.025–$0.15/GiB-mo depending on workload) plus restore fees requires careful volume modeling . **Plakar's open-source core is ISC-licensed and free forever** with audited encryption—the trade-off is self-hosting and operational responsibility . **Validate whether you need a fully managed SaaS platform (Druva, Rubrik, Veeam) or a self-hosted open-source engine (Plakar, Backrest)** before committing.
+> A curated list of 100% SaaS Data Resiliency Cloud platforms, cloud-native backup engines, ransomware cyber-recovery solutions, and self-hosted open-source data protection frameworks.
 
 ---
 
-**Made for data protection architects, SREs, and organizations building cloud-native resilience.**  
-Let's make SaaS data resiliency more open, auditable, and cost-predictable.
+## Sector Overview & Market Dynamics
+
+The global **Data Protection as a Service (DPaaS)** and **Cloud Data Resiliency** market is estimated at **$22B–$38B**, with dedicated **Backup-as-a-Service (BaaS)** accounting for **$8B–$11B** and compounding at over 15–30% CAGR through 2030, accelerated by enterprise multi-cloud sprawl and mandatory ransomware recovery SLAs. The sector exhibits **moderate fragmentation with rapid platform consolidation**: enterprise data estates and hybrid environments are gravitating toward a concentrated tier of scale leaders (Veeam, Rubrik, Cohesity/Veritas, Commvault), while agile pure-SaaS platforms and self-hosted open-source storage engines address specific sovereign, niche cloud, and zero-egress workloads.
+
+---
+
+## Table of Contents
+
+- [SaaS / Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Comparison: SaaS vs. Self-Hosted Open-Source](#comparison-saas-vs-self-hosted-open-source)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## SaaS / Hosted Platforms
+
+Leading enterprise SaaS data resiliency cloud providers sorted by company size (valuation / ARR / market cap descending):
+
+| Product | Company Size (Valuation / ARR / Market Cap) | Starting Price (Specific Tier) | Free Tier / Trial Limits | Description |
+|:---|:---|:---|:---|:---|
+| **[Veeam Data Cloud](https://www.veeam.com/)** | **~$15B Valuation** ($1.7B+ ARR; backed by TPG/Insight Partners) | **$2.63 / user / month** (M365 Foundation, annual commitment); Advanced tier at **$3.33/user/mo**; Veeam Vault storage add-on at **$14/TB/mo** (Archive) or **$24/TB/mo** (Standard) | **30-day free trial**; Microsoft Azure workload trial capped at **10 TB of storage**; full access without commercial usage rights | Fully managed SaaS backup with unlimited M365 storage included. Protects Exchange, SharePoint, OneDrive, Teams, and Azure with immutable cloud vaulting and Entra ID resilience. |
+| **[Rubrik Security Cloud](https://www.rubrik.com/)** | **~$11B–$14B Market Cap** ($1.31B FY25 revenue, $1.09B subscription ARR, NYSE: RBRK) | **$156,000 / year** list (Foundation tier entry for 100 BETB baseline on 3-year commitment); utility reserve capacity models available | **30-day free trial** for SaaS offerings: M365 trial limited to **max 500 users and 10 TB capacity**; Google Workspace trial limited to **max 10 users and 500 GB capacity** | Zero-trust enterprise cyber resilience platform providing immutable backups, automated threat hunting, blast-radius analysis, and orchestrated ransomware recovery. |
+| **[Cohesity Cloud Services](https://www.cohesity.com/)** | **~$8B Valuation** ($1.7B+ pro forma revenue post-Veritas DP combination) | **$69.00 / month** (M365 Core Protection starting tier via AWS/Azure marketplace, 80 FETB / 1 user baseline); Enterprise multicloud BaaS scales via metered credits | **30-day free trial**; full access to Cohesity DataProtect BaaS for AWS/Azure/M365 workloads; trial length variable per regional partner | AI-powered multicloud data security and BaaS platform covering hybrid environments, enterprise virtual machines, databases, and SaaS collaboration applications. |
+| **[Commvault Cloud](https://www.commvault.com/)** | **~$7.2B Market Cap** ($995.6M FY25 revenue, NASDAQ: CVLT) | **$937.00 / TB / month** (Metallic Cloud Storage Cool Tier list on 1-month commitment); M365 backup starting at **~$3.25 / user / month** | **30-day free trial**; cloud marketplace subscriptions provisioned with **30,000 evaluation credits** to benchmark FETB+ consumption across workloads | SaaS-delivered cyber resiliency and backup powered by Metallic engine, featuring air-gapped Cloud Storage, Active Directory resilience, and automated cleanroom recovery. |
+| **[Acronis Cyber Protect Cloud](https://www.acronis.com/)** | **~$4B Valuation** ($420M+ ARR; backed by EQT and BlackRock) | **$0.07 / GB / month** (starting cloud storage rate under per-GB model); workstation backup starting at **~$3.00 / workstation / month** via service provider rate card | **30-day free trial**; full platform access for MSP/enterprise customer tenants with active ransomware rollback engine | Integrated cyber protection platform uniting cloud backup, disaster recovery, continuous data protection (CDP), and AI-driven anti-ransomware remediation. |
+| **[Druva Data Resiliency Cloud](https://www.druva.com/)** | **~$2B Valuation** ($200M+ ARR) | **$2.50 / user / month** (inSync Microsoft 365 / Google Workspace baseline); credit-based data center storage starting at **~$30–$40 / TB / month** after deduplication | **30-day free trial** (extendable to a **maximum of 60 days** for partner evaluations); no credit card required; includes live onboarding checklists | 100% SaaS data protection platform built natively on AWS with global source-side deduplication, zero-egress restore charges, and automated disaster recovery orchestration. |
+| **[Keepit](https://www.keepit.com/)** | **~$391M Valuation** ($100M+ ARR) | **$2.60 / user / month** (Business Essentials tier for M365/Google Workspace on annual commitment); Enterprise Unlimited tier at **$4.00/user/mo** | **30-day evaluation Proof of Concept (POC)** available via sales onboarding; mandatory 30-day security hold on deleted accounts | Vendor-independent, cloud-dedicated backup for Microsoft 365, Google Workspace, Salesforce, and Azure Entra ID with 4 immutable data copies distributed across independent cloud infrastructure. |
+| **[HYCU Protégé](https://www.hycu.com/)** | **~$350M–$500M Valuation** (~$58M ARR, $140M funding raised) | **$1.20 / user / month** (Workforce Identity Suite for Okta/Entra ID); **$2.25 / user / month** (Microsoft 365 Suite); Starter VM bundles from **$5,000 / year** | **14-day free trial** standard across HYCU R-Cloud and Azure (promotional 30-day trials for Okta/Entra ID); unmetered software trial (cloud compute/storage egress billed by host hyperscaler) | Purpose-built multi-cloud data protection and R-Cloud marketplace supporting 100+ SaaS services, PaaS offerings, Nutanix, AWS, Azure, and Google Cloud workloads. |
+| **[Clumio (Commvault)](https://www.commvault.com/)** | **Acquired subsidiary** (Commvault Systems, Inc.) | **$0.025 / GiB / month** (Amazon S3 backup); DynamoDB protection at **$0.15 / GiB / month**; Aurora snapshots at **$0.030 / GiB / month** | **14-day free trial** on AWS and Google Cloud Marketplaces; Google Cloud Marketplace trial capped at **14 days or $2,500 total usage credits** | Serverless, high-scale backup and recovery engine tailored for high-volume Amazon S3 buckets, cloud databases, and AWS native environments with air-gapped vaulting. |
+
+---
+
+## Open-Source GitHub Projects
+
+Self-hosted data protection systems, encrypted backup engines, and Kubernetes disaster recovery orchestrators sorted by GitHub stargazers count descending:
+
+| Project | Star Badge | Star Count | Architecture & Storage Backends | License | Description |
+|:---|:---:|:---:|:---|:---|:---|
+| **[Rclone](https://github.com/rclone/rclone)** | [![Stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers) | 61,000+ | CLI, VFS mount, FUSE, REST API; 70+ cloud backends (S3, B2, Azure, Drive, SFTP) | MIT | The "Swiss Army knife" of cloud data sync and multi-cloud resiliency. Powers data replication, bandwidth throttling, and encrypted mirroring across cloud-native environments. |
+| **[Restic](https://github.com/restic/restic)** | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | 37,200+ | Golang, Content-Defined Chunking, AES-256 CTR, Poly1305-AES; S3, B2, Azure, GCS, SFTP | BSD-2-Clause | Foundational secure backup engine featuring cryptographic deduplication, end-to-end encryption, and snapshot isolation without external daemon dependencies. |
+| **[Duplicati](https://github.com/duplicati/duplicati)** | [![Stars](https://img.shields.io/github/stars/duplicati/duplicati?style=social&color=white)](https://github.com/duplicati/duplicati/stargazers) | 15,200+ | C# / .NET, Web UI, Tray Icon, AES-256; S3, OneDrive, Google Drive, Backblaze B2, WebDAV | LGPL-2.1 | Block-based encrypted backup software with a built-in web management console, granular scheduler, incremental backup deduplication, and multi-destination redundancy. |
+| **[Kopia](https://github.com/kopia/kopia)** | [![Stars](https://img.shields.io/github/stars/kopia/kopia?style=social&color=white)](https://github.com/kopia/kopia/stargazers) | 14,700+ | Go, CLI, GUI, Repository Server, Content-Addressed Storage; AWS S3, Azure Blob, GCP, B2, SFTP | Apache-2.0 | High-performance fast backup and restore tool featuring zero-knowledge client-side encryption, deduplication, compression (zstd/snappy), and a built-in multi-user repository server. |
+| **[BorgBackup](https://github.com/borgbackup/borg)** | [![Stars](https://img.shields.io/github/stars/borgbackup/borg?style=social&color=white)](https://github.com/borgbackup/borg/stargazers) | 13,900+ | Python/C, Deduplicated Chunking, HMAC-SHA256, authenticated encryption; SSH/Local storage | BSD-3-Clause | Enterprise-grade deduplicating backup engine with verified authenticated encryption, bandwidth-efficient offsite SSH transport, and automated snapshot pruning. |
+| **[Velero](https://github.com/vmware-tanzu/velero)** | [![Stars](https://img.shields.io/github/stars/vmware-tanzu/velero?style=social&color=white)](https://github.com/vmware-tanzu/velero/stargazers) | 10,300+ | Kubernetes CRDs, Controller daemon, CSI Volume Snapshots; S3, Azure Blob, Google Cloud Storage | Apache-2.0 | Standard cloud-native disaster recovery orchestrator for Kubernetes clusters; backs up and restores etcd resources and persistent application volumes across clusters and cloud regions. |
+| **[Longhorn](https://github.com/longhorn/longhorn)** | [![Stars](https://img.shields.io/github/stars/longhorn/longhorn?style=social&color=white)](https://github.com/longhorn/longhorn/stargazers) | 8,000+ | Kubernetes Microservices, Distributed Block Storage Engine; S3, NFS targets | Apache-2.0 | CNCF-incubated cloud-native distributed block storage system providing cross-region synchronous replication, scheduled volume snapshots, and automated disaster recovery. |
+| **[Backrest](https://github.com/garethgeorge/backrest)** | [![Stars](https://img.shields.io/github/stars/garethgeorge/backrest?style=social&color=white)](https://github.com/garethgeorge/backrest/stargazers) | 7,900+ | Web UI, Go REST daemon, Restic Orchestrator; S3, MinIO, B2, Azure, local storage | GPL-3.0 | Modern web-based management UI and orchestrator for Restic repositories, offering scheduled plan executions, snapshot browsers, multi-repository aggregation, and Discord/Slack alerts. |
+| **[WAL-G](https://github.com/wal-g/wal-g)** | [![Stars](https://img.shields.io/github/stars/wal-g/wal-g?style=social&color=white)](https://github.com/wal-g/wal-g/stargazers) | 4,300+ | Golang, Continuous WAL Archiving, Delta Backups; S3, Google Cloud Storage, Azure Blob | Apache-2.0 | Cloud-native archival, continuous WAL streamer, and point-in-time recovery (PITR) engine designed for high-throughput databases (PostgreSQL, MySQL, MongoDB, Redis). |
+| **[Plakar](https://github.com/plakarkorp/plakar)** | [![Stars](https://img.shields.io/github/stars/plakarkorp/plakar?style=social&color=white)](https://github.com/plakarkorp/plakar/stargazers) | 2,100+ | Go, Kloset Encrypted Container, Passphrase-Derived Key Architecture; S3, NAS, Local FS, Tape | ISC | Modern auditable resilience engine featuring end-to-end client encryption, audited zero-knowledge architecture, deduplicated multi-destination snapshots, and granular verifiable restores. |
+| **[Kanister](https://github.com/kanisterio/kanister)** | [![Stars](https://img.shields.io/github/stars/kanisterio/kanister?style=social&color=white)](https://github.com/kanisterio/kanister/stargazers) | 800+ | Kubernetes Operator, Custom Blueprints, Go; Cloud Object Storage (S3, GCS, Azure) | Apache-2.0 | Extensible framework for application-level data management on Kubernetes, enabling application-consistent database backups, cross-region migration, and automated failover workflows. |
+
+---
+
+## Comparison: SaaS vs. Self-Hosted Open-Source
+
+| Capability / Factor | 100% Pure SaaS Cloud (e.g., Veeam, Druva, Rubrik) | Self-Hosted Open-Source (e.g., Restic, Backrest, Plakar) |
+|:---|:---|:---|
+| **Infrastructure Overhead** | Zero infrastructure footprint; fully managed cloud control and data planes. | Self-hosted compute daemon/container and independently provisioned object storage. |
+| **Pricing Predictability** | Per-user seat tiers ($1.20–$7.00/mo) or per-TB consumption ($25–$150+/TB/mo); risk of cost sprawl. | Zero software licensing fees; cost bounded strictly by underlying commodity cloud storage ($0.004–$0.015/GB/mo on S3/Wasabi/B2). |
+| **Ransomware Cyber Vaults** | Turnkey air-gap vaults, cleanroom recovery, and AI-powered anomaly detection included. | Requires manual architecture of immutable WORM buckets (S3 Object Lock) and KMS key rotation. |
+| **SaaS Application Protection** | Native direct API connectors for Microsoft 365, Google Workspace, Salesforce, and Entra ID. | Requires custom API scraping scripts, third-party adapters, or database dump pipelines. |
+| **Data Sovereignty & Auditing** | Subject to vendor trust boundaries and SaaS tenant isolation standards (SOC2, FedRAMP). | Complete sovereign control; source code auditable under ISC, MIT, Apache-2.0, or BSD licenses. |
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add or update entries in `README.md` following the tabular column structures.
+3. For SaaS platforms: Include verified starting tier pricing and specific trial limits.
+4. For Open-Source projects: Include star badges linked to stargazers and correct repository metrics.
+5. Submit a pull request with reference documentation.
+
+---
+
+## Disclaimer
+
+- This is a community-curated technical directory; listings do not represent commercial endorsements.
+- Always verify data isolation, encryption at rest/in transit, and scheduled recovery validation before deploying production workloads.
