@@ -1,30 +1,45 @@
-# Awesome Full SaaS Data Resiliency Cloud [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Full SaaS Data Resiliency Cloud Banner" width="100%" />
+</p>
 
-> A curated list of 100% SaaS Data Resiliency Cloud platforms, cloud-native backup engines, ransomware cyber-recovery solutions, and self-hosted open-source data protection frameworks.
+# 🛡️ Awesome Full SaaS Data Resiliency Cloud
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud?style=flat&color=yellow" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud?style=flat&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🌐 A comprehensive, production-grade curated list of **100% SaaS Data Resiliency Cloud** platforms, cloud-native backup engines, ransomware cyber-recovery solutions, and self-hosted open-source data protection frameworks.
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📈 Sector Overview & Market Dynamics
 
 The global **Data Protection as a Service (DPaaS)** and **Cloud Data Resiliency** market is estimated at **$22B–$38B**, with dedicated **Backup-as-a-Service (BaaS)** accounting for **$8B–$11B** and compounding at over 15–30% CAGR through 2030, accelerated by enterprise multi-cloud sprawl and mandatory ransomware recovery SLAs. The sector exhibits **moderate fragmentation with rapid platform consolidation**: enterprise data estates and hybrid environments are gravitating toward a concentrated tier of scale leaders (Veeam, Rubrik, Cohesity/Veritas, Commvault), while agile pure-SaaS platforms and self-hosted open-source storage engines address specific sovereign, niche cloud, and zero-egress workloads.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [SaaS / Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Comparison: SaaS vs. Self-Hosted Open-Source](#comparison-saas-vs-self-hosted-open-source)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+- [☁️ SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [⚖️ Comparison: SaaS vs. Self-Hosted Open-Source](#-comparison-saas-vs-self-hosted-open-source)
+- [⭐ Star History](#-star-history)
+- [🤝 Support](#-support)
+- [🚀 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#-disclaimer)
 
 ---
 
-## SaaS / Hosted Platforms
+## ☁️ SaaS / Hosted Platforms
 
 Leading enterprise SaaS data resiliency cloud providers sorted by company size (valuation / ARR / market cap descending):
 
-| Product | Company Size (Valuation / ARR / Market Cap) | Starting Price (Specific Tier) | Free Tier / Trial Limits | Description |
+| Product | 🏢 Company Size (Valuation / ARR / Market Cap) | 💰 Starting Price (Specific Tier) | ⏱️ Free Tier / Trial Limits | 📝 Description |
 |:---|:---|:---|:---|:---|
 | **[Veeam Data Cloud](https://www.veeam.com/)** | **~$15B Valuation** ($1.7B+ ARR; backed by TPG/Insight Partners) | **$2.63 / user / month** (M365 Foundation, annual commitment); Advanced tier at **$3.33/user/mo**; Veeam Vault storage add-on at **$14/TB/mo** (Archive) or **$24/TB/mo** (Standard) | **30-day free trial**; Microsoft Azure workload trial capped at **10 TB of storage**; full access without commercial usage rights | Fully managed SaaS backup with unlimited M365 storage included. Protects Exchange, SharePoint, OneDrive, Teams, and Azure with immutable cloud vaulting and Entra ID resilience. |
 | **[Rubrik Security Cloud](https://www.rubrik.com/)** | **~$11B–$14B Market Cap** ($1.31B FY25 revenue, $1.09B subscription ARR, NYSE: RBRK) | **$156,000 / year** list (Foundation tier entry for 100 BETB baseline on 3-year commitment); utility reserve capacity models available | **30-day free trial** for SaaS offerings: M365 trial limited to **max 500 users and 10 TB capacity**; Google Workspace trial limited to **max 10 users and 500 GB capacity** | Zero-trust enterprise cyber resilience platform providing immutable backups, automated threat hunting, blast-radius analysis, and orchestrated ransomware recovery. |
@@ -38,11 +53,11 @@ Leading enterprise SaaS data resiliency cloud providers sorted by company size (
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Self-hosted data protection systems, encrypted backup engines, and Kubernetes disaster recovery orchestrators sorted by GitHub stargazers count descending:
 
-| Project | Star Badge | Star Count | Architecture & Storage Backends | License | Description |
+| Project | ⭐ Star Badge | 📊 Star Count | 🛠️ Architecture & Storage Backends | 📜 License | 📝 Description |
 |:---|:---:|:---:|:---|:---|:---|
 | **[Rclone](https://github.com/rclone/rclone)** | [![Stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers) | 61,000+ | CLI, VFS mount, FUSE, REST API; 70+ cloud backends (S3, B2, Azure, Drive, SFTP) | MIT | The "Swiss Army knife" of cloud data sync and multi-cloud resiliency. Powers data replication, bandwidth throttling, and encrypted mirroring across cloud-native environments. |
 | **[Restic](https://github.com/restic/restic)** | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | 37,200+ | Golang, Content-Defined Chunking, AES-256 CTR, Poly1305-AES; S3, B2, Azure, GCS, SFTP | BSD-2-Clause | Foundational secure backup engine featuring cryptographic deduplication, end-to-end encryption, and snapshot isolation without external daemon dependencies. |
@@ -58,9 +73,9 @@ Self-hosted data protection systems, encrypted backup engines, and Kubernetes di
 
 ---
 
-## Comparison: SaaS vs. Self-Hosted Open-Source
+## ⚖️ Comparison: SaaS vs. Self-Hosted Open-Source
 
-| Capability / Factor | 100% Pure SaaS Cloud (e.g., Veeam, Druva, Rubrik) | Self-Hosted Open-Source (e.g., Restic, Backrest, Plakar) |
+| Capability / Factor | ☁️ 100% Pure SaaS Cloud (e.g., Veeam, Druva, Rubrik) | 💻 Self-Hosted Open-Source (e.g., Restic, Backrest, Plakar) |
 |:---|:---|:---|
 | **Infrastructure Overhead** | Zero infrastructure footprint; fully managed cloud control and data planes. | Self-hosted compute daemon/container and independently provisioned object storage. |
 | **Pricing Predictability** | Per-user seat tiers ($1.20–$7.00/mo) or per-TB consumption ($25–$150+/TB/mo); risk of cost sprawl. | Zero software licensing fees; cost bounded strictly by underlying commodity cloud storage ($0.004–$0.015/GB/mo on S3/Wasabi/B2). |
@@ -70,7 +85,25 @@ Self-hosted data protection systems, encrypted backup engines, and Kubernetes di
 
 ---
 
-## How to Contribute
+##  Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Full-SaaS-Data-Resiliency-Cloud&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+Thank you so much for exploring and using this repository! If you found this curated guide helpful in navigating the cloud data resiliency and cyber recovery ecosystem:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and contribute** to keep the pricing and tooling directory accurate and updated.
+- 📢 **Share with colleagues, SREs, and DevOps communities**.
+- ☕ **Support future maintenance and open-source curation**:  
+  [![Buy Me A Coffee / Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ff69b4?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ishandutta2007)
+
+---
+
+## 🚀 How to Contribute
 
 1. Fork this repository.
 2. Add or update entries in `README.md` following the tabular column structures.
@@ -80,7 +113,7 @@ Self-hosted data protection systems, encrypted backup engines, and Kubernetes di
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 - This is a community-curated technical directory; listings do not represent commercial endorsements.
 - Always verify data isolation, encryption at rest/in transit, and scheduled recovery validation before deploying production workloads.
